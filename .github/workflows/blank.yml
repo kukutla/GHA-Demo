@@ -5,15 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: buildstep
-       run: echo "Cyber app build step"
+        run: echo "Cyber app build step"
   test:
     runs-on: ubuntu-latest
     steps:
       - name: teststep
-      run : "Cyber app test step"
+       run : "Cyber app test step"
    deploy:
      runs-on: ubuntu-latest
      steps:
        - name: deploystep
-        run: "Cyber app deply step"
+         run: "Cyber app deply step"
      
