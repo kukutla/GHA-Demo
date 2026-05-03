@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ghfirst
-        run: echo "Welcome to my first GH Job"
+        run: |
+          echo "Welcome to my first GH Job"
+          echo "Welcome to my second GH Job"
         
     
