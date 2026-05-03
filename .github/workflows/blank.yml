@@ -1,12 +1,21 @@
-name: git actions
+name: cyber deplyment
 on: workflow_dispatch
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: ghfirst
-        run: |
-          echo "Welcome to my first GH Job"
-          echo "Welcome to my second GH Job"
+      - name: buildstep
+        run: echo "building cyber project"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: teststep
+        run: echo "Running cyber app test cases"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploystep
+        run: echo "Depying the cyber application"
+     
         
     
