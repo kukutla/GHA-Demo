@@ -1,0 +1,10 @@
+name: git actions
+on: workflow_dispatch
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ghfirst
+        run: echo "Welcome to my first GH Job"
+        
+    
