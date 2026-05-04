@@ -1,19 +1,19 @@
 name: Cyber App Deployment
 on: workflow_dispatch
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: buildstep
-              run: echo "Cyber app build step"
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: teststep
-          run: echo "Cyber app test step"
-     deploy:
-       runs-on: ubuntu-latest
-       steps:
-         - name: deploystep
-           run: echo "Cyber app deply step"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: buildstep
+        run: echo "Cyber app build step"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: teststep
+        run: echo "Cyber app test step"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploystep
+       run: echo "Cyber app deply step"
      
