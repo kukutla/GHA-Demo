@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: teststep
-       run : "Cyber app test step"
+        run : "Cyber app test step"
    deploy:
      runs-on: ubuntu-latest
      steps:
