@@ -8,11 +8,13 @@ jobs:
         run: echo "Cyber app build step"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: teststep
         run: echo "Cyber app test step"
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: deploystep
         run: echo "Cyber app deploy step"
