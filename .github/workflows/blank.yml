@@ -1,20 +1,18 @@
-name: Cyber Prod Deployment
+name: cyber app deployemnt
 on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: build step
-        run: echo "Build Step"
+        run: echo "Started build step"
   test:
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: test step
-        run: echo "Test Step"
+        run: echo "Started test step"
   deploy:
     runs-on: ubuntu-latest
-    needs: test
     steps:
       - name: deploy step
-        run: echo "delpoy step"
+        run: echo "Started deploy step"
