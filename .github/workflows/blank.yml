@@ -5,7 +5,7 @@ on:
       - main
       - develpmet
       - release/**
-      - hot/**
+      - hotfix/**
   pull_request:
       branches:
         - main
